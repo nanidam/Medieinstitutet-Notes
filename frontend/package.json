@@ -1,0 +1,20 @@
+{
+  "name": "notes-nanidam",
+  "version": "1.0.0",
+  "description": "notes-nanidam created by GitHub Classroom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "author": "Nani Dam",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/tinymce": "^4.6.5",
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "axios": "^1.3.4"
+  }
+}

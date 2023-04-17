@@ -1,0 +1,51 @@
+@import "colors";
+
+.create-note {
+  background-color: $lightBlueGrey;
+  border: 2px solid $darkNavyBlue;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  position: relative; 
+  
+  .create-note-title {
+    color: $darkNavyBlue;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  #create-note-title {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid $lightBlueGrey;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  .post-notes-btn, #create-note-btn {
+    background-color: $darkNavyBlue;
+    border: none;
+    border-radius: 5px;
+    color: $lightBeige;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;   
+    margin-top: 10px;
+
+    &#create-note-btn {
+      margin-left: 0;
+    } 
+      
+    &:hover {
+      background-color: lighten($darkNavyBlue, 10%);
+    }
+
+    &:active {
+      background-color: darken($darkNavyBlue, 10%);
+    }
+  }  
+}
+

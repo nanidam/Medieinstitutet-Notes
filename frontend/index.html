@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create, edit, and delete notes with ease using our WYSIWYG note-taking app. With the ability to customize text color and background, you can keep your notes organized and visually appealing. Built with Axios, TinyMCE, Vite, Express, Node.js, MySQL2, CORS, TypeScript, and Rome, our app provides a seamless and efficient note-taking experience.">
+    <title>Notes are fun!</title>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://cdn.tiny.cloud/1/ie3r0zb4qn701o2z3pxjszyzqxj0q9artwbwj0n6ze7so7ar/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script defer src="src/script.ts" type="module"></script>
+</head>
+<body>
+    <h1>Create fun notes</h1>
+    <div class="user">
+        <div class="login-user">
+            <label for="username-input">
+                <input type="text" id="username-input" placeholder="Username">
+            </label>
+            <label for="user-password-input">
+                <input type="password" id="user-password-input" placeholder="Password">
+            </label>
+            <button id="login-user-btn">Login</button>
+        </div>
+        <div class="logged-in-user">
+            <p class="logged-in-text"></p>
+        </div>
+    </div>
+    <section class="create-note">
+        <button id="create-note-btn">Create note</button>
+    </section>
+    <section class="note-list">
+        <h2 class="note-list-title">All notes</h2>
+        <div class="note-container"></div>
+    </section>     
+</body>
+</html>

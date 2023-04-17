@@ -1,0 +1,63 @@
+@import "colors";
+
+.note {
+
+    .edit-note-title {
+    color: $darkNavyBlue;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    } 
+
+    #edit-title{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .edit-note-id{
+    opacity: 0 ;
+    }
+
+    #update-form {  
+
+        #save-note-btn,
+        #delete-note-btn {
+            border: none;
+            border-radius: 5px;
+            color: $lightBeige;
+            cursor: pointer;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            transition: all 0.2s ease-in-out;
+            margin-top: 10px;
+        
+            &#save-note-btn {
+                background-color: $darkNavyBlue; 
+        
+                &:hover {
+                    background-color: lighten($darkNavyBlue, 10%);
+                }
+                
+                &:active {
+                    background-color: darken($darkNavyBlue, 10%);
+                }
+            }
+        
+            &#delete-note-btn{
+                background-color: $oliveGreen;
+        
+                &:hover {
+                    background-color: lighten($oliveGreen, 10%);
+                }
+                
+                &:active {
+                    background-color: darken($oliveGreen, 10%);
+                }
+            }      
+        }
+    }
+}
+
+
+
+

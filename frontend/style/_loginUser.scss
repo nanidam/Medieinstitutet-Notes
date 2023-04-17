@@ -1,0 +1,76 @@
+@import "colors";
+
+.user {
+  position: fixed;
+  top: 5%;
+  right: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 10;
+  border-radius: 20px;
+
+  .login-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    gap: 5px;
+  }
+
+  input {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid $lightBlueGrey;
+    border-radius: 5px;
+    background-color: $lightBeige;
+    color: $darkGrey;
+    transition: all 0.2s ease-in-out;
+
+    &:focus {
+    border-color: $darkNavyBlue;
+    box-shadow: 0 0 5px rgba($darkNavyBlue, 0.5);
+    }
+
+    &::placeholder {
+    color: $oliveGreen;
+    }
+  }
+  
+  .logged-in-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logged-in-text {
+      font-size: 1.3rem;
+      margin-right: 10px;
+      background-color: $lightBlueGrey;
+      border-radius: 10px;
+    }
+  }
+
+  #login-user-btn {
+    background-color: $darkNavyBlue;
+    color: $lightBeige;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  
+    &:hover {
+      background-color: lighten($darkNavyBlue, 10%);
+    }
+  
+    &:active {
+      background-color: darken($darkNavyBlue, 10%);
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+  

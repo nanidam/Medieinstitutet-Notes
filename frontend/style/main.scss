@@ -1,0 +1,11 @@
+@import "normalize";
+@import "colors";
+@import "loginUser";
+@import "noteList";
+@import "createNote";
+@import "editNote";
+
+body {
+    background-color: $lightBeige;
+    padding: 20px;
+} 
